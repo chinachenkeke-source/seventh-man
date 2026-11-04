@@ -19,6 +19,10 @@ description: "第七人原则 / The Seventh Man：用七个视角压力测试一
 
 英文角色名：Demand Detective、Market Veteran、Engineering Lead、CFO、Risk Counsel、Org Coach、The Falsifier。
 
+**中英混说时怎么判断：** 看哪一种语言**承载了句子的主干语义**，而不是数单词。`帮我 evaluate 一下这个 idea` 判为中文；`This is feasible 吗，我觉得还行` 判为英文。
+
+如果两种语言几乎各占一半、实在分不出来，按顺序退让：① 跟随本次对话前面几轮使用的语言 → ② 仍拿不准，用一句话问用户"用中文还是英文？"。**不要猜错语言**，猜错的代价比多问一句大得多。
+
 ## 何时使用
 
 - 用户抛出一个想法、点子、方案、商业设想、产品方向
