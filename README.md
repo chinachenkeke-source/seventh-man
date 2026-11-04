@@ -1,9 +1,9 @@
 <h1 align="center">🕵️ The Seventh Man</h1>
 
-<p align="center"><strong>Six experts stress-test your idea.<br/>A seventh is hired to kill it.</strong></p>
+<p align="center"><strong>Six people stand behind you, finding reasons it can work.<br/>One stands opposite, finding reasons it will fail.</strong></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-v0.1.2-blue?style=flat-square" alt="version">
+  <img src="https://img.shields.io/badge/version-v0.2.0-blue?style=flat-square" alt="version">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="license">
   <img src="https://img.shields.io/badge/languages-6+-orange?style=flat-square" alt="languages">
   <img src="https://img.shields.io/badge/agent%20skill-SKILL.md-purple?style=flat-square" alt="skill">
@@ -15,24 +15,48 @@
 
 ---
 
-> 💭 An idea's biggest enemy isn't the people who disagree with it.
-> It's that **nobody ever disagreed with it properly.**
+> 💭 **Agreeing with your idea is easy.**
+> Finding someone willing to spend real effort proving you wrong is not.
 
-**The Seventh Man** is an [Agent Skill](https://github.com/agentskills/agentskills) that puts an idea through a stress test. It convenes seven people — and only one of them is on your side.
+**The Seventh Man** is an [Agent Skill](https://github.com/agentskills/agentskills) that puts an idea through a stress test. It convenes seven people — **six on your side, one against you**, and the one against you had better bring receipts.
+
+---
+
+## 🕯️ Why the seventh man is precious
+
+In most rooms, six people help you argue *how this can work*.
+
+One person stands opposite and says: *"It won't — and here's why."*
+
+**That person is rare today.** What you usually get is agreement, encouragement, and "sounds great". Nobody wants to be the one who kills the mood.
+
+But **disagreement is the deepest form of taking you seriously.**
+
+The seventh man isn't attacking you. He is running your idea through **dialectics**: assume it dies, then go find the evidence. Only after it has been tested against its opposite have you actually looked at it.
+
+**The cold water is so you can see the hole in front of your feet.** Most losses don't come from making a wrong decision — they come from **nobody warning you that the decision had a hole**.
+
+The method is old — **thesis, antithesis, synthesis**:
+
+> 🟢 Six people say *"it can work"* — the **thesis**
+> 🔴 The seventh says *"it will die"* — the **antithesis**
+> ⚖️ After they collide, what you hold is the **synthesis**
 
 ---
 
 ## 🪑 The Seven Seats
 
-| | Role | Asks exactly one question |
-|:--:|:--|:--|
-| ① | 🔍 **Demand Detective** | Does anyone actually hurt — and how do they cope today? |
-| ② | ⚔️ **Market Veteran** | Why would *you* be the one who wins? |
-| ③ | 🔧 **Engineering Lead** | Can it be built at all? |
-| ④ | 💰 **CFO** | Does the math close? |
-| ⑤ | ⚖️ **Risk Counsel** | What could blow up? |
-| ⑥ | 🧭 **Org Coach** | Who does the work — and can they sustain it? |
-| ⑦ | 🗡️ **The Falsifier** | **Why won't this die?** |
+| | Role | Side | Asks exactly one question |
+|:--:|:--|:--:|:--|
+| ① | 🔍 **Demand Detective** | 🟢 for | Who hurts, and how badly? |
+| ② | ⚔️ **Market Veteran** | 🟢 for | Why can *you* win? |
+| ③ | 🔧 **Engineering Lead** | 🟢 for | How do we build it? |
+| ④ | 💰 **CFO** | 🟢 for | How does the math work? |
+| ⑤ | ⚖️ **Risk Counsel** | 🟢 for | How do we contain the risk? |
+| ⑥ | 🧭 **Org Coach** | 🟢 for | How do we organise the people? |
+| ⑦ | 🗡️ **The Falsifier** | 🔴 **against** | **Why won't this die?** |
+
+> The first six are advocates: their job is to find **real evidence that it can work** — not to poke holes. Poking holes belongs to the seventh, who must first restate the strongest version of the idea (no straw men) before attacking. If the attack fails, he must say so: *"the seventh man failed to break it."*
 
 ---
 
@@ -42,8 +66,8 @@
 🕵️  The Seventh Man · Idea Stress Test
 ├── The idea (one sentence)
 ├── Key assumptions
-├── Six analyses (six sections, 3-5 points each)
-├── ⑦ The Falsifier
+├── 🟢 Six advocates (six sections, 3-5 points each, evidence required)
+├── 🔴 ⑦ The Falsifier
 │   ├── Steelman — the strongest version, before the attack
 │   ├── Lethal flaw
 │   ├── False premise
@@ -97,7 +121,7 @@ Ask in any language and the **whole report follows** — role names, headings, t
 |:--|:--:|
 | 🇬🇧 English | ✅ verified |
 | 🇨🇳 中文 | ✅ verified |
-| 🔀 中英 mixed | ✅ verified |
+| 🔀 mixed 中英 | ✅ verified |
 | 🇪🇸 Español | ✅ verified |
 | 🇯🇵 日本語 | ✅ verified |
 | 🇰🇷 한국어 | ✅ verified |
