@@ -1,6 +1,6 @@
 # 第七人原则
 
-**v0.0.4** · MIT · 兼容任何支持 `SKILL.md` 的 agent
+**v0.0.5** · MIT · 兼容任何支持 `SKILL.md` 的 agent
 
 [English](README.md) | 中文
 
@@ -61,6 +61,8 @@ git clone https://github.com/chinachenkeke-source/seventh-man.git ~/.dsh/skills/
 安装后无需重启，技能会自动出现在 AI 的技能清单里。
 
 **兼容性**：任何支持 `SKILL.md` 格式的 agent 都能用，包括 Claude Code、GitHub Copilot CLI、Amp、OpenCode 等。把这个仓库放进对应的技能目录即可（例如 `~/.claude/skills/seventh-man`）。
+
+**语言**：技能正文是中文，但分析结果跟随提问语言——用英文提问就输出英文报告，角色名和标题也会切换。
 
 ## 使用
 

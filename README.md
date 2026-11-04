@@ -1,6 +1,6 @@
 # The Seventh Man
 
-**v0.0.4** · MIT · works with any agent that supports `SKILL.md`
+**v0.0.5** · MIT · works with any agent that supports `SKILL.md`
 
 English | [中文](README.zh-CN.md)
 
@@ -54,7 +54,7 @@ No restart needed — the skill appears in your agent's catalog automatically.
 
 **Compatibility:** any agent that reads `SKILL.md`, including Claude Code, GitHub Copilot CLI, Amp, and OpenCode. Drop this repo into the matching skills directory (e.g. `~/.claude/skills/seventh-man`).
 
-> **Note:** the skill body is written in Chinese, so the analysis is produced in Chinese. The structure, roles, and reasoning are language-independent.
+> **Language:** the skill body is written in Chinese, but the analysis is always delivered in the language you ask in — English question, English report. Role names and headings switch too.
 
 ## Usage
 
