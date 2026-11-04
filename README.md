@@ -1,8 +1,6 @@
 # The Seventh Man
 
-**v0.1.0** · MIT · works with any agent that supports `SKILL.md`
-
-English | [中文](README.zh-CN.md)
+**v0.1.1** · MIT · works with any agent that supports `SKILL.md`
 
 > An idea's biggest enemy isn't the people who disagree with it. It's that **nobody ever disagreed with it properly.**
 
@@ -100,6 +98,24 @@ Both cases are **fictional**, and both ended with "needs verification" — becau
 - **Steelman first** — the Falsifier must restate the strongest version of the idea before attacking it
 - **Honesty over stance** — if the attack fails, say so: "the seventh man failed to break it"
 - **One idea per run** — want to test another one? Start over
+
+## 中文速览
+
+**第七人原则**：把你的想法丢进来，六位专家从需求、市场、技术、财务、风险、组织六个维度评估可行性，第七人专职证伪、寻找致命伤。
+
+- **输出语言跟随提问语言**——中文、English、Español、日本語、한국어 均已验证，角色名和标题一起切换
+- 每次以**最小验证实验**收尾：花最少钱和时间、能证伪核心假设的那件事，并写明什么结果算失败
+- 禁止和稀泥；第七人攻不破时必须承认"未能击穿"
+
+安装：
+
+```bash
+git clone https://github.com/chinachenkeke-source/seventh-man.git ~/.dsh/skills/seventh-man
+```
+
+使用：对 AI 说"帮我用第七人原则看看这个想法：……"，或者输入 `/seventh-man 我想辞职开咖啡店`。
+
+示例：[社区团购](examples/case-01-community-group-buying.md) · [开咖啡店](examples/case-02-coffee-shop.md)
 
 ## License
 
