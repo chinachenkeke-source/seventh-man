@@ -1,5 +1,7 @@
 # 第七人原则 · 一个给 AI 用的思维压力测试技能
 
+**v0.0.1** · MIT · 兼容任何支持 `SKILL.md` 的 agent
+
 > 一个想法最大的敌人不是反对者，是**没人认真反对它**。
 
 **第七人原则**是一个 [Agent Skill](https://github.com/agentskills/agentskills)：把你的一个想法丢进去，它会召集七个人来审——
