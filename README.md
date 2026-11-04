@@ -1,6 +1,6 @@
-# 第七人原则 · 一个给 AI 用的思维压力测试技能
+# The Seventh Man · 第七人原则
 
-**v0.0.2** · MIT · 兼容任何支持 `SKILL.md` 的 agent
+**v0.0.3** · MIT · 兼容任何支持 `SKILL.md` 的 agent
 
 > 一个想法最大的敌人不是反对者，是**没人认真反对它**。
 
@@ -50,14 +50,15 @@
 
 ## 安装
 
+一行装好：
+
 ```bash
-git clone https://github.com/chinachenkeke-source/dsh-skills.git
-cp -R dsh-skills/seventh-man ~/.dsh/skills/
+git clone https://github.com/chinachenkeke-source/seventh-man.git ~/.dsh/skills/seventh-man
 ```
 
 安装后无需重启，技能会自动出现在 AI 的技能清单里。
 
-**兼容性**：任何支持 `SKILL.md` 格式的 agent 都能用，包括 Claude Code、GitHub Copilot CLI、Amp、OpenCode 等。把 `seventh-man/` 复制到对应的技能目录即可。
+**兼容性**：任何支持 `SKILL.md` 格式的 agent 都能用，包括 Claude Code、GitHub Copilot CLI、Amp、OpenCode 等。把这个仓库放进对应的技能目录即可（例如 `~/.claude/skills/seventh-man`）。
 
 ## 使用
 
