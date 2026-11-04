@@ -1,48 +1,67 @@
-# The Seventh Man
+<h1 align="center">🕵️ The Seventh Man</h1>
 
-**v0.1.1** · MIT · works with any agent that supports `SKILL.md`
+<p align="center"><strong>Six experts stress-test your idea.<br/>A seventh is hired to kill it.</strong></p>
 
-> An idea's biggest enemy isn't the people who disagree with it. It's that **nobody ever disagreed with it properly.**
+<p align="center">
+  <img src="https://img.shields.io/badge/version-v0.1.2-blue?style=flat-square" alt="version">
+  <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="license">
+  <img src="https://img.shields.io/badge/languages-6+-orange?style=flat-square" alt="languages">
+  <img src="https://img.shields.io/badge/agent%20skill-SKILL.md-purple?style=flat-square" alt="skill">
+</p>
 
-**The Seventh Man** is an [Agent Skill](https://github.com/agentskills/agentskills) that puts your idea through a stress test. It convenes seven people:
+<p align="center">
+  <b>English</b> · <a href="README.zh-CN.md">中文</a>
+</p>
 
-- **Six experts** examine feasibility from six angles — demand, market, engineering, finance, risk, and organization
-- **The seventh** does nothing but try to **destroy it**: lethal flaws, false premises, failed precedents, the most likely way it dies
+---
 
-There is only one rule: **survive the seventh man.**
+> 💭 An idea's biggest enemy isn't the people who disagree with it.
+> It's that **nobody ever disagreed with it properly.**
 
-## The seven seats
+**The Seventh Man** is an [Agent Skill](https://github.com/agentskills/agentskills) that puts an idea through a stress test. It convenes seven people — and only one of them is on your side.
 
-| Seat | Role | Asks exactly one question |
-|---|---|---|
-| ① | Demand Detective | Does anyone actually hurt, and how do they cope today? |
-| ② | Market Veteran | Why would *you* be the one who wins? |
-| ③ | Engineering Lead | Can it be built at all? |
-| ④ | CFO | Does the math close? |
-| ⑤ | Risk Counsel | What could blow up? |
-| ⑥ | Org Coach | Who does the work — and can they sustain it? |
-| **⑦** | **The Falsifier** | **Why won't this die?** |
+---
 
-## What you get
+## 🪑 The Seven Seats
 
+| | Role | Asks exactly one question |
+|:--:|:--|:--|
+| ① | 🔍 **Demand Detective** | Does anyone actually hurt — and how do they cope today? |
+| ② | ⚔️ **Market Veteran** | Why would *you* be the one who wins? |
+| ③ | 🔧 **Engineering Lead** | Can it be built at all? |
+| ④ | 💰 **CFO** | Does the math close? |
+| ⑤ | ⚖️ **Risk Counsel** | What could blow up? |
+| ⑥ | 🧭 **Org Coach** | Who does the work — and can they sustain it? |
+| ⑦ | 🗡️ **The Falsifier** | **Why won't this die?** |
+
+---
+
+## 📋 What You Get
+
+```text
+🕵️  The Seventh Man · Idea Stress Test
+├── The idea (one sentence)
+├── Key assumptions
+├── Six analyses (six sections, 3-5 points each)
+├── ⑦ The Falsifier
+│   ├── Steelman — the strongest version, before the attack
+│   ├── Lethal flaw
+│   ├── False premise
+│   ├── Precedent
+│   ├── Counter-evidence
+│   ├── Most likely death
+│   └── The overrated part
+└── ⚖️ Verdict
+    ├── Lethal flaws
+    ├── Most likely death
+    └── Minimum viable test
 ```
-# The Seventh Man · Idea Stress Test
 
-## The idea (one sentence)
-## Key assumptions
-## Six analyses (six sections, 3-5 points each)
-## ⑦ The Falsifier
-   Steelman / Lethal flaw / False premise / Precedent /
-   Counter-evidence / Most likely death / The overrated part
-## Verdict
-   Lethal flaws · Most likely death · Proceed or not · Minimum viable test
-```
+Every run ends with a **minimum viable test** — the cheapest, fastest experiment that could disprove the core assumption. Not *"do more research"*, but specific enough to say **who does what, for how long, which metric to watch, and what outcome counts as failure**.
 
-Every run ends with a **minimum viable test**: the cheapest, fastest experiment that could disprove the core assumption. Not "do more research" — specific enough to state who does what, for how long, which metric to watch, and what outcome counts as failure.
+---
 
-## Install
-
-One line:
+## 📦 Install
 
 ```bash
 git clone https://github.com/chinachenkeke-source/seventh-man.git ~/.dsh/skills/seventh-man
@@ -50,73 +69,65 @@ git clone https://github.com/chinachenkeke-source/seventh-man.git ~/.dsh/skills/
 
 No restart needed — the skill appears in your agent's catalog automatically.
 
-**Compatibility:** any agent that reads `SKILL.md`, including Claude Code, GitHub Copilot CLI, Amp, and OpenCode. Drop this repo into the matching skills directory (e.g. `~/.claude/skills/seventh-man`).
+> 🧩 **Works with any agent that reads `SKILL.md`** — Claude Code, GitHub Copilot CLI, Amp, OpenCode, and more. Drop this repo into the matching skills directory (e.g. `~/.claude/skills/seventh-man`).
 
-> **Language:** the skill body is written in Chinese, but the analysis is always delivered in the language you ask in — English question, English report, Spanish question, Spanish report.
+---
 
-## Usage
+## 🚀 Usage
 
 Ask your agent:
 
-> Run the Seventh Man on this idea: …
+> 🗣️ *"Run the Seventh Man on this idea: …"*
 
 Or invoke it directly:
 
-```
+```text
 /seventh-man I want to quit my job and open a coffee shop
 ```
 
-**Trigger words:** seventh man, stress test, evaluate this idea, challenge my assumptions, is this viable
+**Trigger words:** seventh man · stress test · evaluate this idea · challenge my assumptions · is this viable
 
-## Language support
+---
 
-Ask in any language and the whole report follows — role names, headings, tables, and the verdict switch with you. Verified in six configurations:
+## 🌍 Language Support
+
+Ask in any language and the **whole report follows** — role names, headings, tables and verdict all switch with you.
 
 | Language | Status |
-|---|---|
-| English | ✅ verified |
-| 中文 | ✅ verified |
-| 中英 mixed | ✅ verified |
-| Español | ✅ verified |
-| 日本語 | ✅ verified |
-| 한국어 | ✅ verified |
+|:--|:--:|
+| 🇬🇧 English | ✅ verified |
+| 🇨🇳 中文 | ✅ verified |
+| 🔀 中英 mixed | ✅ verified |
+| 🇪🇸 Español | ✅ verified |
+| 🇯🇵 日本語 | ✅ verified |
+| 🇰🇷 한국어 | ✅ verified |
 
-Headings never leak back into Chinese, and the report is written directly in the target language rather than translated sentence by sentence.
+> The report is written **directly in the target language**, not translated sentence by sentence. Headings never leak back into Chinese.
 
-## Examples
+---
+
+## 💡 Examples
 
 Two complete runs, so you can see the actual output:
 
-- [Case 01 · Quitting a stable job at 40 to run community group buying](examples/case-01-community-group-buying.md)
-- [Case 02 · A programmer quitting to open a coffee shop](examples/case-02-coffee-shop.md)
+| | Case | Verdict |
+|:--:|:--|:--|
+| 🛒 | [Quitting a stable job at 40 to run community group buying](examples/case-01-community-group-buying.md) | needs verification |
+| ☕ | [A programmer quitting to open a coffee shop](examples/case-02-coffee-shop.md) | needs verification |
 
-Both cases are **fictional**, and both ended with "needs verification" — because the real answer to most ideas isn't "yes" or "no", it's "you're doing the steps in the wrong order".
+Both cases are **fictional**, and both ended with *"needs verification"* — because the real answer to most ideas isn't "yes" or "no". It's **"you're doing the steps in the wrong order."**
 
-## Design principles
+---
 
-- **No fence-sitting** — "overall viable, but watch out" is banned
-- **Steelman first** — the Falsifier must restate the strongest version of the idea before attacking it
-- **Honesty over stance** — if the attack fails, say so: "the seventh man failed to break it"
-- **One idea per run** — want to test another one? Start over
+## ⚖️ Design Principles
 
-## 中文速览
+- 🚫 **No fence-sitting** — "overall viable, but watch out" is banned
+- 🎯 **Steelman first** — the Falsifier must restate the strongest version before attacking
+- 🫱 **Honesty over stance** — if the attack fails, it must say: *"the seventh man failed to break it"*
+- 1️⃣ **One idea per run** — want to test another one? Start over
 
-**第七人原则**：把你的想法丢进来，六位专家从需求、市场、技术、财务、风险、组织六个维度评估可行性，第七人专职证伪、寻找致命伤。
+---
 
-- **输出语言跟随提问语言**——中文、English、Español、日本語、한국어 均已验证，角色名和标题一起切换
-- 每次以**最小验证实验**收尾：花最少钱和时间、能证伪核心假设的那件事，并写明什么结果算失败
-- 禁止和稀泥；第七人攻不破时必须承认"未能击穿"
-
-安装：
-
-```bash
-git clone https://github.com/chinachenkeke-source/seventh-man.git ~/.dsh/skills/seventh-man
-```
-
-使用：对 AI 说"帮我用第七人原则看看这个想法：……"，或者输入 `/seventh-man 我想辞职开咖啡店`。
-
-示例：[社区团购](examples/case-01-community-group-buying.md) · [开咖啡店](examples/case-02-coffee-shop.md)
-
-## License
+## 📄 License
 
 MIT © [chenkeke](https://github.com/chinachenkeke-source)
