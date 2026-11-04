@@ -1,6 +1,6 @@
 # The Seventh Man
 
-**v0.0.5** · MIT · works with any agent that supports `SKILL.md`
+**v0.1.0** · MIT · works with any agent that supports `SKILL.md`
 
 English | [中文](README.zh-CN.md)
 
@@ -54,7 +54,7 @@ No restart needed — the skill appears in your agent's catalog automatically.
 
 **Compatibility:** any agent that reads `SKILL.md`, including Claude Code, GitHub Copilot CLI, Amp, and OpenCode. Drop this repo into the matching skills directory (e.g. `~/.claude/skills/seventh-man`).
 
-> **Language:** the skill body is written in Chinese, but the analysis is always delivered in the language you ask in — English question, English report. Role names and headings switch too.
+> **Language:** the skill body is written in Chinese, but the analysis is always delivered in the language you ask in — English question, English report, Spanish question, Spanish report.
 
 ## Usage
 
@@ -69,6 +69,21 @@ Or invoke it directly:
 ```
 
 **Trigger words:** seventh man, stress test, evaluate this idea, challenge my assumptions, is this viable
+
+## Language support
+
+Ask in any language and the whole report follows — role names, headings, tables, and the verdict switch with you. Verified in six configurations:
+
+| Language | Status |
+|---|---|
+| English | ✅ verified |
+| 中文 | ✅ verified |
+| 中英 mixed | ✅ verified |
+| Español | ✅ verified |
+| 日本語 | ✅ verified |
+| 한국어 | ✅ verified |
+
+Headings never leak back into Chinese, and the report is written directly in the target language rather than translated sentence by sentence.
 
 ## Examples
 
