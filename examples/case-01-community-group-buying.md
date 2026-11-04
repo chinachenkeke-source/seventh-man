@@ -2,6 +2,8 @@
 
 > 本案例为**虚构示例**，用于展示第七人原则的输出效果。
 
+**In English:** A 40-year-old supporting a family of four on 8k/month wants to quit and run community group buying full-time. Verdict: **needs verification** — build it as a side business for three months before resigning.
+
 ## 想法复述
 
 某三线城市，40 岁，一家四口，月薪 8k，想辞职全职做社区团购。

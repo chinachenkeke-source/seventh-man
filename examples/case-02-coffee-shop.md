@@ -2,6 +2,8 @@
 
 > 本案例为**虚构示例**，用于展示第七人原则的输出效果。
 
+**In English:** A programmer with a stable salary wants to quit and open a coffee shop. Verdict: **needs verification** — work in a café and run a weekend pop-up for six months before signing a lease.
+
 ## 想法复述
 
 一名有稳定收入的程序员，想辞职开一家自己的咖啡店。

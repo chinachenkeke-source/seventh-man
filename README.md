@@ -1,86 +1,91 @@
-# The Seventh Man · 第七人原则
+# The Seventh Man
 
-**v0.0.3** · MIT · 兼容任何支持 `SKILL.md` 的 agent
+**v0.0.4** · MIT · works with any agent that supports `SKILL.md`
 
-> 一个想法最大的敌人不是反对者，是**没人认真反对它**。
+English | [中文](README.zh-CN.md)
 
-**第七人原则**是一个 [Agent Skill](https://github.com/agentskills/agentskills)：把你的一个想法丢进去，它会召集七个人来审——
+> An idea's biggest enemy isn't the people who disagree with it. It's that **nobody ever disagreed with it properly.**
 
-- **六位专家**分别从需求、市场、技术、财务、风险、组织六个维度评估可行性
-- **第七人**不干别的，专职**证伪**：找出致命伤、错误前提、失败先例、最可能的死法
+**The Seventh Man** is an [Agent Skill](https://github.com/agentskills/agentskills) that puts your idea through a stress test. It convenes seven people:
 
-只有一个要求：**扛过第七人。**
+- **Six experts** examine feasibility from six angles — demand, market, engineering, finance, risk, and organization
+- **The seventh** does nothing but try to **destroy it**: lethal flaws, false premises, failed precedents, the most likely way it dies
 
-## 七个席位
+There is only one rule: **survive the seventh man.**
 
-| 席位 | 角色 | 只问一个问题 |
+## The seven seats
+
+| Seat | Role | Asks exactly one question |
 |---|---|---|
-| ① | 需求侦探 | 真有人痛吗？现在就没人解决吗？ |
-| ② | 市场老兵 | 凭什么是你赢？ |
-| ③ | 工程负责人 | 做得出来吗？ |
-| ④ | 财务官 | 算得过账吗？ |
-| ⑤ | 风控律师 | 会不会出事？ |
-| ⑥ | 组织教练 | 谁来干？干得动吗？ |
-| **⑦** | **证伪官** | **它凭什么不会死？** |
+| ① | Demand Detective | Does anyone actually hurt, and how do they cope today? |
+| ② | Market Veteran | Why would *you* be the one who wins? |
+| ③ | Engineering Lead | Can it be built at all? |
+| ④ | CFO | Does the math close? |
+| ⑤ | Risk Counsel | What could blow up? |
+| ⑥ | Org Coach | Who does the work — and can they sustain it? |
+| **⑦** | **The Falsifier** | **Why won't this die?** |
 
-## 输出长什么样
+## What you get
 
 ```
-# 第七人原则 · 想法压力测试
+# The Seventh Man · Idea Stress Test
 
-## 想法复述
-## 关键假设
-## 六人分析（六段，各 3-5 条）
-## ⑦ 第七人 · 证伪官
-   靶子（最强版本）/ 致命伤 / 错误前提 / 先例 / 反向证据 / 最可能死法 / 被高估的部分
-## 裁决
-   致命伤数量 · 最可能死法 · 是否值得继续 · 最小验证实验
+## The idea (one sentence)
+## Key assumptions
+## Six analyses (six sections, 3-5 points each)
+## ⑦ The Falsifier
+   Steelman / Lethal flaw / False premise / Precedent /
+   Counter-evidence / Most likely death / The overrated part
+## Verdict
+   Lethal flaws · Most likely death · Proceed or not · Minimum viable test
 ```
 
-最后一定会给你一个**最小验证实验**：花最少钱和时间、能证伪核心假设的那一件事。不是"再调研调研"，是具体到谁、做什么、多久、看什么指标。
+Every run ends with a **minimum viable test**: the cheapest, fastest experiment that could disprove the core assumption. Not "do more research" — specific enough to state who does what, for how long, which metric to watch, and what outcome counts as failure.
 
-## 示例
+## Install
 
-两个完整的跑通案例，可以直接看输出长什么样：
-
-- [示例 01 · 40 岁辞掉月薪 8k 的工作，去做社区团购](examples/case-01-community-group-buying.md)
-- [示例 02 · 程序员辞职开咖啡店](examples/case-02-coffee-shop.md)
-
-两个案例都是**虚构**的，结论都是"需要验证"——因为大部分想法的真实答案是"顺序反了"，而不是"行或不行"。
-
-## 安装
-
-一行装好：
+One line:
 
 ```bash
 git clone https://github.com/chinachenkeke-source/seventh-man.git ~/.dsh/skills/seventh-man
 ```
 
-安装后无需重启，技能会自动出现在 AI 的技能清单里。
+No restart needed — the skill appears in your agent's catalog automatically.
 
-**兼容性**：任何支持 `SKILL.md` 格式的 agent 都能用，包括 Claude Code、GitHub Copilot CLI、Amp、OpenCode 等。把这个仓库放进对应的技能目录即可（例如 `~/.claude/skills/seventh-man`）。
+**Compatibility:** any agent that reads `SKILL.md`, including Claude Code, GitHub Copilot CLI, Amp, and OpenCode. Drop this repo into the matching skills directory (e.g. `~/.claude/skills/seventh-man`).
 
-## 使用
+> **Note:** the skill body is written in Chinese, so the analysis is produced in Chinese. The structure, roles, and reasoning are language-independent.
 
-对 AI 说：
+## Usage
 
-> 帮我用第七人原则看看这个想法：……
+Ask your agent:
 
-或者输入斜杠命令：
+> Run the Seventh Man on this idea: …
+
+Or invoke it directly:
 
 ```
-/seventh-man 我想在小区做上门宠物洗护
+/seventh-man I want to quit my job and open a coffee shop
 ```
 
-**触发词**：第七人、压力测试、评估这个想法、帮我看看靠不靠谱、挑战我的想法、这能做吗
+**Trigger words:** seventh man, stress test, evaluate this idea, challenge my assumptions, is this viable
 
-## 设计原则
+## Examples
 
-- **禁止和稀泥**——不许"整体可行，但要注意……"
-- **先立靶子再开打**——第七人必须复述想法的最强版本，不许打稻草人
-- **诚实优先于立场**——如果攻击完发现想法确实站得住，必须明说"第七人未能击穿"
-- **一次只审一个**——想审下一个，重新来
+Two complete runs, so you can see the actual output:
 
-## 许可
+- [Case 01 · Quitting a stable job at 40 to run community group buying](examples/case-01-community-group-buying.md)
+- [Case 02 · A programmer quitting to open a coffee shop](examples/case-02-coffee-shop.md)
 
-MIT
+Both cases are **fictional**, and both ended with "needs verification" — because the real answer to most ideas isn't "yes" or "no", it's "you're doing the steps in the wrong order".
+
+## Design principles
+
+- **No fence-sitting** — "overall viable, but watch out" is banned
+- **Steelman first** — the Falsifier must restate the strongest version of the idea before attacking it
+- **Honesty over stance** — if the attack fails, say so: "the seventh man failed to break it"
+- **One idea per run** — want to test another one? Start over
+
+## License
+
+MIT © [chenkeke](https://github.com/chinachenkeke-source)
